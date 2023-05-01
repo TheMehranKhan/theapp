@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             >
               <h3 className="text-2xl font-bold">Twitter →</h3>
               <div className="text-lg">
-                Check out my twitter, i do shitpost there quite alot so, be updated about me.
+              Check out my twitter, i do shitpost there quite alot so, be updated about me.
               </div>
             </Link>
             <Link
@@ -39,7 +39,26 @@ const Home: NextPage = () => {
             >
               <h3 className="text-2xl font-bold">Instagram →</h3>
               <div className="text-lg">
-              Check out my sweet coding adventures, it's filled with cool coding stuff that you'll love! ❤️
+              Check out my sweet coding adventures, it&apos;s filled with cool coding stuff that you&apos;ll never find anywhere else.
+              </div>
+            </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="https://github.com/themehrankhan"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">Github →</h3>
+              <div className="text-lg">
+              Check out my github, i do code there quite alot so, be updated about me.
+              </div>
+            </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="https://discord.gg/Yd2wtwh7yv"
+              target="_blank"
+            >
+              <h3 className="text-2xl font-bold">Discord →</h3>
+              <div className="text-lg"> Show some love in discord server
               </div>
             </Link>
           </div>
