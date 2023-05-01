@@ -54,11 +54,11 @@ const Home: NextPage = () => {
             </Link>
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://discord.gg/themehrankhan"
+              href="https://discord.gg/Yd2wtwh7yv"
               target="_blank"
             >
               <h3 className="text-2xl font-bold">Discord →</h3>
-              <div className="text-lg"> love! ❤️
+              <div className="text-lg"> Show some love in discord server
               </div>
             </Link>
           </div>
