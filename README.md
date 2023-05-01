@@ -1,28 +1,41 @@
-# Create T3 App
+# theApp
+
+theApp is a chat-based application designed to automate and make various services accessible to Iranian people. With advanced AI technology, theApp provides a fast and reliable service that streamlines workflow and eliminates the need for human interaction in many cases. 
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+* User-friendly chat interface
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+* Request multiple services through chat
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+* Fast and reliable service through advanced AI technology
 
-## Learn More
+* Streamlines workflow and eliminates the need for human interaction in many cases
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+* Constantly expanding partnerships to make sure that you have access to the services you need
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Installation
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+Just open the website, use web-app version for iOS on Safari and Android on any Chromium based browser.
 
-## How do I deploy this?
+## Contributing
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+We welcome contributions from the community. To contribute to theApp, please fork this repository and submit a pull request.
+
+
+## Partnerships
+
+We are constantly expanding our partnerships to make sure that you have access to the services you need. For more information about our partners, visit our website.
+
+
+## License
+
+theApp is licensed under the MIT License.
+
+
+## Support
+
+If you experience any issues while using theApp, please open an issue on this repo, we will try to answer as quickly as possible.
+
