@@ -1,3 +1,9 @@
+/* This is a TypeScript React code that imports necessary modules from the Next.js framework and other
+libraries. It defines a functional component called `Home` that renders a webpage with links to the
+author's social media profiles and a message that is fetched from an API using tRPC. It also defines
+another functional component called `AuthShowcase` that displays the user's authentication status
+and a secret message if the user is logged in. */
+
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -5,8 +11,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 
 import { api } from "~/utils/api";
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
+  const hello = api.example.hello.useQuery({ text: "from Mehran" });
   return (
     <>
 <Head>
@@ -16,18 +21,18 @@ const Home: NextPage = () => {
   <link rel="icon" href="/favicon.ico" />
 </Head>
 
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#00fbde] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+            the<span className="text-[hsl(167,60%,20%)]">App</span>
           </h1>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-4 md:gap-8">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
               href="https://twitter.com/themehrankhan"
               target="_blank"
             >
-              <h3 className="text-2xl font-bold">Twitter →</h3>
+              <h3 className="text-2xl font-bold text-[hsl(167,60%,20%)]">Twitter →</h3>
               <div className="text-lg">
               Check out my twitter, i do shitpost there quite alot so, be updated about me.
               </div>
@@ -37,7 +42,7 @@ const Home: NextPage = () => {
               href="https://instagram.com/themehrankhan"
               target="_blank"
             >
-              <h3 className="text-2xl font-bold">Instagram →</h3>
+              <h3 className="text-2xl font-bold text-[hsl(167,60%,20%)]">Instagram →</h3>
               <div className="text-lg">
               Check out my sweet coding adventures, it&apos;s filled with cool coding stuff that you&apos;ll never find anywhere else.
               </div>
@@ -47,7 +52,7 @@ const Home: NextPage = () => {
               href="https://github.com/themehrankhan"
               target="_blank"
             >
-              <h3 className="text-2xl font-bold">Github →</h3>
+              <h3 className="text-2xl font-bold text-[hsl(167,60%,20%)]">Github →</h3>
               <div className="text-lg">
               Check out my github, i do code there quite alot so, be updated about me.
               </div>
@@ -57,7 +62,7 @@ const Home: NextPage = () => {
               href="https://discord.gg/Yd2wtwh7yv"
               target="_blank"
             >
-              <h3 className="text-2xl font-bold">Discord →</h3>
+              <h3 className="text-2xl font-bold text-[hsl(167,60%,20%)]">Discord →</h3>
               <div className="text-lg"> Show some love in discord server
               </div>
             </Link>
@@ -75,6 +80,15 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+/* `const AuthShowcase` is a functional component that displays the user's authentication status and a
+secret message if the user is logged in. It uses the `useSession` hook from the `next-auth/react`
+library to get the user's session data, and the `useQuery` hook from the `api` module to fetch the
+secret message from the server using tRPC. The `secretMessage` query is only enabled if the user is
+logged in, which is determined by checking if `sessionData?.user` is not undefined. The component
+then renders a message that includes the user's name (if logged in) and the secret message (if
+available), as well as a button to sign in or sign out depending on the user's authentication
+status. */
 
 const AuthShowcase: React.FC = () => {
   const { data: sessionData } = useSession();
