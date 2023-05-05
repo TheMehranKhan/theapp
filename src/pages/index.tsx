@@ -110,6 +110,6 @@ const AuthShowcase: React.FC = () => {
       >
         {sessionData ? "Sign out" : "Sign in"}
       </button>
-    </div>,
+    </div>
   );
 };
